@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="433.0" prefWidth="596.0" style="-fx-background-color: af3938;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rs.ac.singidunum.controller.EditRouteController">
+   <children>
+      <TableView fx:id="routeTableView" layoutX="10.0" layoutY="10.0" prefHeight="433.0" prefWidth="385.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="routeIdColumn" prefWidth="61.0" style="-fx-font-family: Arial;" text="ROUTE_ID" />
+            <TableColumn fx:id="cityColumn" prefWidth="82.0" style="-fx-font-family: Arial;" text="CITY" />
+            <TableColumn fx:id="timeColumn" prefWidth="86.0" style="-fx-font-family: Arial;" text="TIME" />
+            <TableColumn fx:id="dateColumn" prefWidth="88.0" style="-fx-font-family: Arial;" text="DATE" />
+            <TableColumn fx:id="priceColumn" prefWidth="68.0" style="-fx-font-family: Arial;" text="PRICE" />
+         </columns>
+      </TableView>
+      <Button layoutX="388.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleUpdateButton" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: white;" text="Update">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="517.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleDeleteButton" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: white;" text="Delete" AnchorPane.rightAnchor="3.0">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Button>
+      <Label layoutX="388.0" layoutY="197.0" prefHeight="30.0" prefWidth="57.0" text="DATE:">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="priceTextField" layoutX="450.0" layoutY="251.0" prefHeight="44.0" prefWidth="140.0" AnchorPane.rightAnchor="3.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="388.0" layoutY="258.0" prefHeight="30.0" prefWidth="57.0" text="PRICE:">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="139.0" text="TIME:">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="390.0" layoutY="67.0" prefHeight="30.0" prefWidth="49.0" text="CITY:">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cityTextField" editable="false" layoutX="450.0" layoutY="60.0" prefHeight="44.0" prefWidth="140.0" AnchorPane.rightAnchor="3.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="datePicker" layoutX="453.0" layoutY="190.0" prefHeight="44.0" prefWidth="140.0" style="-fx-font-family: Arial; -fx-font-weight: Bold; -fx-background-color: white;" AnchorPane.rightAnchor="3.0" />
+      <ComboBox fx:id="minutesComboBox" layoutX="527.0" layoutY="132.0" prefHeight="44.0" prefWidth="57.0" style="-fx-font-family: Arial; -fx-background-color: white; -fx-font-weight: Bold; -fx-font-size: 12px;" AnchorPane.rightAnchor="3.0" />
+      <ComboBox fx:id="hoursComboBox" layoutX="453.0" layoutY="132.0" prefHeight="44.0" prefWidth="57.0" style="-fx-font-family: Arial; -fx-background-color: white; -fx-font-weight: Bold; -fx-font-size: 12px;" />
+      <Label layoutX="520.0" layoutY="132.0" prefHeight="44.0" text=":">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusLabel" alignment="CENTER" layoutX="385.0" layoutY="387.0" prefHeight="17.0" prefWidth="208.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

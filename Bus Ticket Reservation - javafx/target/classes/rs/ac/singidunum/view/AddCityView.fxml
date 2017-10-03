@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="433.0" prefWidth="596.0" style="-fx-background-color: af3938;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rs.ac.singidunum.controller.AddCityController">
+   <children>
+      <TextField fx:id="addCityTextField" alignment="CENTER" layoutX="70.0" layoutY="130.0" prefHeight="60.0" prefWidth="250.0" promptText="city" style="fx-prompt-text-fill: gray; -fx-background-color: white; -fx-text-fill: black;" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font></TextField>
+      <Button fx:id="addCityButton" layoutX="198.0" layoutY="237.0" mnemonicParsing="false" onAction="#handleAddCityButton" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: white;" text="ADD" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="160.0">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font></Button>
+      <Label fx:id="statusLabel" alignment="CENTER" layoutX="161.0" layoutY="301.0" prefHeight="17.0" prefWidth="276.0" style="-fx-text-fill: white;" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

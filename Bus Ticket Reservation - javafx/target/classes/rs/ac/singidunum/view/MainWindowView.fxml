@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: af3938;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rs.ac.singidunum.controller.MainWindowController">
+   <children>
+      <SplitPane fx:id="splitPane" dividerPositions="0.24937343358395989" layoutX="376.0" layoutY="191.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="433.0" prefWidth="196.0" style="-fx-background-color: af3938\;">
+               <children>
+                  <VBox layoutY="68.0" maxHeight="230.0" prefHeight="209.0" prefWidth="196.0" spacing="7.0" style="-fx-background-color: af3938;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="84.0" layoutY="56.0" prefHeight="101.0" prefWidth="196.0" text="ADD NEW:" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                           <font>
+                              <Font name="Arial Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="busCompanyButton" layoutY="104.0" maxHeight="33.0" mnemonicParsing="false" onAction="#handleBusCompanyButton" prefHeight="35.0" prefWidth="196.0" style="-fx-background-color: white;" text="Bus Company" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Button>
+                        <Button layoutY="129.0" maxHeight="33.0" mnemonicParsing="false" onAction="#handleCitiesButton" prefHeight="35.0" prefWidth="196.0" style="-fx-background-color: white;" text="City" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Button>
+                        <Button maxHeight="33.0" mnemonicParsing="false" onAction="#handleRouteButton" prefHeight="35.0" prefWidth="196.0" style="-fx-background-color: white;" text="Route">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Button>
+                     </children>
+                  </VBox>
+                  <VBox layoutY="196.0" prefHeight="225.0" prefWidth="196.0" spacing="7.0" style="-fx-background-color: af3938;" AnchorPane.bottomAnchor="-1.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="65.0" prefWidth="196.0" text="EDIT:">
+                           <font>
+                              <Font name="Arial Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#handleEditBusCompanyButton" prefHeight="35.0" prefWidth="196.0" style="-fx-background-color: white;" text="Bus Companies">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Button>
+                        <Button layoutY="265.0" mnemonicParsing="false" onAction="#handleEditCityButton" prefHeight="35.0" prefWidth="196.0" style="-fx-background-color: white;" text="Cities">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Button>
+                        <Button layoutY="290.0" mnemonicParsing="false" onAction="#handleEditRouteButton" prefHeight="35.0" prefWidth="196.0" style="-fx-background-color: white;" text="Routes">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Button>
+                        <Button layoutY="315.0" mnemonicParsing="false" onAction="#handleEditReservationButton" prefHeight="35.0" prefWidth="196.0" style="-fx-background-color: white;" text="Reservations">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font></Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="optionWindow" minHeight="0.0" minWidth="0.0" prefHeight="433.0" prefWidth="596.0" style="-fx-background-color: white;" SplitPane.resizableWithParent="false" />
+        </items>
+      </SplitPane>
+      <HBox layoutX="154.0" prefHeight="65.0" prefWidth="596.0" spacing="170.0" style="-fx-background-color: af3938;" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label fx:id="welcomeLabel" layoutX="198.0" prefHeight="65.0" prefWidth="302.0" text="Welcome" AnchorPane.bottomAnchor="435.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#handleLogoutButton" prefHeight="64.0" prefWidth="124.0" style="-fx-background-color: af3938; -fx-border-radius: 0px;" text="Logout">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox style="-fx-background-color: af3938;" />
+      <Button fx:id="homeButton" layoutX="3.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="64.0" prefWidth="196.0" style="-fx-background-color: af3938; -fx-border-radius: 0px;" text="Home" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="433.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rs.ac.singidunum.controller.UserInfoController">
+   <children>
+      <TableView fx:id="userTableView" editable="true" layoutX="10.0" layoutY="40.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="userIdColumn" editable="false" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" style="-fx-font-family: Arial;" text="ID" />
+            <TableColumn fx:id="usernameColumn" maxWidth="198.0" minWidth="198.0" prefWidth="198.0" resizable="false" style="-fx-font-family: Arial;" text="USERNAME" />
+            <TableColumn fx:id="emailColumn" prefWidth="198.0" resizable="false" style="-fx-font-family: Arial;" text="EMAIL" />
+            <TableColumn fx:id="activeColumn" prefWidth="100.0" resizable="false" style="-fx-font-family: Arial;" text="ACTIVE" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

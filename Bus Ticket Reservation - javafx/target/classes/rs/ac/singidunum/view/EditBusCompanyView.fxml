@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="433.0" prefWidth="596.0" style="-fx-background-color: af3938;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rs.ac.singidunum.controller.EditBusCompanyController">
+   <children>
+      <TableView fx:id="busCompanyTable" layoutX="7.0" prefHeight="433.0" prefWidth="233.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="idColumn" editable="false" prefWidth="75.0" resizable="false" style="-fx-font-family: Arial;" text="ID" />
+          <TableColumn fx:id="busCompanyColumn" prefWidth="157.0" resizable="false" style="-fx-font-family: Arial;" text="BUS COMPANY NAME" />
+        </columns>
+      </TableView>
+      <Label layoutX="247.0" layoutY="198.0" prefHeight="23.0" prefWidth="102.0" text="Company:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="busCompanyTextField" layoutX="348.0" layoutY="187.0" prefHeight="44.0" prefWidth="233.0" style="-fx-background-color: white;">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="319.0" layoutY="132.0" text="ID:">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idTextField" editable="false" layoutX="348.0" layoutY="125.0" prefHeight="44.0" prefWidth="60.0" style="-fx-background-color: white;">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="248.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleUpdateButton" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: white;" text="Update">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="480.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleDeleteButton" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: white;" text="Delete">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Button>
+      <Label fx:id="statusLabel" alignment="CENTER" layoutX="255.0" layoutY="360.0" prefHeight="17.0" prefWidth="329.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

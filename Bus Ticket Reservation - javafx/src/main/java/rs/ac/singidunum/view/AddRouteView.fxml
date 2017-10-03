@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import com.jfoenix.validation.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="433.0" prefWidth="596.0" style="-fx-background-color: af3938;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rs.ac.singidunum.controller.AddRouteController">
+   <children>
+      <DatePicker fx:id="datePicker" disable="true" layoutX="220.0" layoutY="126.0" style="-fx-background-color: white; -fx-font-family: Arial; -fx-font-weight: Bold;" />
+      <ComboBox fx:id="hoursComboBox" disable="true" layoutX="220.0" layoutY="168.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: white; -fx-font-family: Arial; -fx-font-weight: Bold; -fx-font-size: 12px;" />
+      <ComboBox fx:id="minutesComboBox" disable="true" layoutX="288.0" layoutY="168.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: white; -fx-font-family: Arial; -fx-font-weight: Bold; -fx-font-size: 12px;" />
+      <Label layoutX="112.0" layoutY="130.0" text="Departure date:">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="112.0" layoutY="172.0" text="Departure time:">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="109.0" layoutY="253.0" text="Price:">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="priceTextField" disable="true" layoutX="220.0" layoutY="249.0" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: white; -fx-font-family: Arial; -fx-font-weight: Bold;">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></TextField>
+      <Label layoutX="112.0" layoutY="209.0" text="City:">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <ComboBox fx:id="cityComboBox" disable="true" layoutX="220.0" layoutY="205.0" prefHeight="25.0" prefWidth="174.0" style="-fx-background-color: white; -fx-font-family: Arial; -fx-font-weight: Bold;" />
+      <Label layoutX="279.0" layoutY="169.0" text=":">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font></Label>
+      <ComboBox fx:id="busCompanyComboBox" layoutX="220.0" layoutY="21.0" prefWidth="150.0" style="-fx-background-color: white; -fx-font-family: Arial; -fx-font-weight: Bold;" />
+      <Label layoutX="112.0" layoutY="25.0" text="Bus Company:">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="112.0" layoutY="66.0" text="Available tickets:">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="availableTicketsTextField" layoutX="220.0" layoutY="62.0" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: white; -fx-font-family: Arial; -fx-font-weight: Bold;">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></TextField>
+      <Button fx:id="addRouteButton" layoutX="462.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleAddRouteButton" style="-fx-background-color: white;" text="Add route">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="addStopButton" disable="true" layoutX="462.0" layoutY="193.0" minWidth="70.0" mnemonicParsing="false" onAction="#handleAddStopButton" style="-fx-background-color: white;" text="Add stop">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="8.0" layoutY="103.0" stroke="BLACK" strokeType="INSIDE" width="596.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="8.0" layoutY="293.0" stroke="BLACK" strokeType="INSIDE" width="596.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Button fx:id="confirmButton" disable="true" layoutX="462.0" layoutY="354.0" minWidth="70.0" mnemonicParsing="false" onAction="#handleConfirmButton" style="-fx-background-color: white;" text="Confirm">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <ListView fx:id="infoListView" layoutX="9.0" layoutY="301.0" prefHeight="132.0" prefWidth="398.0" style="-fx-text-fill: black; -fx-control-inner-background: af3938; -fx-background-color: af3938; -fx-font-family: Arial; -fx-font-weight: Bold;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="198.0" AnchorPane.topAnchor="301.0" />
+      <Label fx:id="confirmLabel" alignment="CENTER" layoutX="398.0" layoutY="394.0" prefHeight="25.0" prefWidth="198.0" style="-fx-text-fill: white;" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="routeLabel" alignment="CENTER" layoutX="398.0" layoutY="80.0" prefHeight="25.0" prefWidth="198.0" style="-fx-text-fill: white;" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

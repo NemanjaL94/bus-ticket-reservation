@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/busCompanyTextVIew"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/register_linear_horizontal_height"
+        android:layout_marginBottom="@dimen/search_activity_margin_bottom"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/custom_row_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/scheduleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/autocomplete_layout_height"
+        android:layout_marginBottom="@dimen/search_activity_margin_bottom"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/custom_row_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/autocomplete_layout_height"
+        android:layout_marginBottom="@dimen/search_activity_margin_bottom"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/custom_row_text_size"
+        android:textStyle="bold" />
+</LinearLayout>

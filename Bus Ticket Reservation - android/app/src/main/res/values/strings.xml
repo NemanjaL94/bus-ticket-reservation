@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Bus Ticket Reservation</string>
+    <string name="register_button">Register</string>
+    <string name="login">Login</string>
+    <string name="logout_button">Logout</string>
+    <string name="login_button">Log in</string>
+    <string name="registration_activity">Registration</string>
+    <string name="result_activity">Routes</string>
+    <string name="reservation_activity">Reservation</string>
+
+
+    <string name="username">Username:</string>
+    <string name="email">Email:</string>
+    <string name="password">Password:</string>
+    <string name="confirm_password">Confirm password:</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="available_tickets_label">Available tickets: </string>
+    <string name="number_of_tickets">Number of tickets for reservation:</string>
+    <string name="price">Total price:</string>
+    <string name="reservation_button">Make reservation</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="date">Date:</string>
+    <string name="datePicker">Pick a date</string>
+    <string name="search_activity_title">Route search</string>
+    <string name="number_of_results">Matches found:</string>
+    <string name="invalid_credentials">Invalid username or password</string>
+    <string name="username_pattern">Username must be between 2 and 20 characters</string>
+    <string name="email_pattern">Invalid email address format</string>
+    <string name="password_pattern">Password must be between 8 and 16 characters</string>
+    <string name="passwords_not_matched">Passwords do not match</string>
+    <string name="successful_registration">Registration was successful</string>
+    <string name="unsuccessful_registration">Username or email already exists</string>
+    <string name="routes_not_found">No routes were found</string>
+    <string name="result_routes">Routes</string>
+    <string name="invalid_number_for_tickets">Invalid number for tickets</string>
+    <string name="successful_reservation">Reservation was successful</string>
+    <string name="unsuccessful_reservation">Reservation was unsuccessful</string>
+    <string name="successful_logout">Logout was successful</string>
+    <string name="unsuccessful_logout">Logout was unsuccessful</string>
+
+</resources>
